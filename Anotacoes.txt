@@ -1,0 +1,5 @@
+padrão BEM:
+    -Bloco
+    -Elemento
+    -Identificador
+Padrão para nomenclatura de classes e IDs para o CSS.
