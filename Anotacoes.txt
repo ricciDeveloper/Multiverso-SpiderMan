@@ -7,4 +7,4 @@ Padrão para nomenclatura de classes e IDs para o CSS.
 
 rem: propriedade relativa. 1rem = 16px, onde é escalável de forma responsiva.
 
-aula: adicionando os eventos e transições nos cards da aplicação com JavaScript
+aula: tratando a responsividade e estilização

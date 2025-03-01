@@ -1,0 +1,23 @@
+@import url('reset.css');
+
+.s-wrapper {
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;      
+}
+
+.s-wrapper  .s-left-column {
+    width: 100px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-wrapper .s-main-content {
+    height: 100%;
+    width: 100%;
+    padding-left: 130px;
+    position: relative;
+}
