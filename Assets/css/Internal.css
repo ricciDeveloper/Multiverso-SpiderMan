@@ -1,4 +1,6 @@
 @import url('reset.css');
+@import url('global.css');
+@import url('./components/_navigator.css');
 
 .s-wrapper {
     display: flex;
@@ -18,6 +20,7 @@
 .s-wrapper .s-main-content {
     height: 100%;
     width: 100%;
-    padding-left: 130px;
-    position: relative;
+    background-color: gray;
+    padding-left: 30px;
+    
 }
