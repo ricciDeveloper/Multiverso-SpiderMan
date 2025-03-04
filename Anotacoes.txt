@@ -7,4 +7,12 @@ Padrão para nomenclatura de classes e IDs para o CSS.
 
 rem: propriedade relativa. 1rem = 16px, onde é escalável de forma responsiva.
 
-aula: Estilizando a div logo da nossa página interna
+aula:adicionando videos a página interna dos Filmes
+
+
+fancybox: lib para galerias
+arquivos estáticos: html, css. São arquivos que não rodam em servidores, o próprio navegador interpreta eles.
+
+
+cdn: arquivos estáticos espalhados globalmente para que você possa acessá-lo da forma mais próxima
+
