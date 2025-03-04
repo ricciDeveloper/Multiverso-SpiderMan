@@ -27,9 +27,8 @@
 .s-wrapper .s-main-content {
     height: 100%;
     width: 100%;
-    background-color: gray;
     padding-left: 130px;
-
+    position: relative;
 }
 
 
@@ -94,4 +93,10 @@
 .s-spiderman-01-03 {
     background-image: url('/Assets/images/spiderman-tobey/movie-03/background.png');
     background-position: cover;
+}
+
+.s-wrapper video {
+    position: fixed;
+    width: 100%;
+
 }

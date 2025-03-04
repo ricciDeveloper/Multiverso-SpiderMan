@@ -16,3 +16,4 @@ arquivos estáticos: html, css. São arquivos que não rodam em servidores, o pr
 
 cdn: arquivos estáticos espalhados globalmente para que você possa acessá-lo da forma mais próxima
 
+REGEXR: expressão regular, conseguimos encontrar padrões.
