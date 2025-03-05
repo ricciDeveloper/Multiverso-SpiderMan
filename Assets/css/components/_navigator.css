@@ -1,59 +1,68 @@
+/* Estilos para o contêiner do navegador */
 .navigator {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
+    height: 80vh; /* Altura de 80% da viewport */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Largura total */
+    position: relative; /* Posicionamento relativo (para elementos filhos absolutos) */
 }
 
+/* Estilos para os itens da lista dentro do navegador */
 .navigator ul li {
-    margin: 60px 0;
-    list-style: none;
+    margin: 60px 0; /* Espaçamento vertical entre os itens */
+    list-style: none; /* Remove os marcadores de lista */
 }
 
+/* Remove o espaçamento superior do primeiro item da lista */
 .navigator ul li:first-child {
     margin-top: 0;
 }
 
+/* Remove o espaçamento inferior do último item da lista */
 .navigator ul li:last-child {
     margin-bottom: 0;
 }
 
+/* Estilos para os links dentro dos itens da lista */
 .navigator ul li a {
-    color: white;
-    border: solid 2px white;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: white; /* Cor do texto */
+    border: solid 2px white; /* Borda sólida branca */
+    width: 45px; /* Largura do círculo */
+    height: 45px; /* Altura do círculo */
+    border-radius: 50%; /* Transforma o link em um círculo */
+    background-color: black; /* Cor de fundo */
+    display: flex; /* Layout flexível para centralizar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
-.navigator::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background-color: white;
-    z-index: 0;
+/* Cria uma linha vertical antes do navegador */
+.navigator::before {
+    content: ''; /* Conteúdo vazio (necessário para pseudo-elementos) */
+    position: absolute; /* Posicionamento absoluto */
+    top: 0; /* Alinhado ao topo */
+    width: 2px; /* Largura da linha */
+    height: 100%; /* Altura total do contêiner */
+    background-color: white; /* Cor da linha */
+    z-index: 0; /* Coloca a linha atrás dos itens da lista */
 }
 
+/* Garante que a lista fique acima da linha vertical */
 .navigator ul {
     z-index: 1;
 }
 
+/* Efeitos de hover e active para os links */
 .navigator ul li a:hover,
 .navigator ul li a:active {
-    color: var(--primary-color);
-    background-color: #fff;
-    transition: 1s;
+    color: var(--primary-color); /* Cor do texto ao passar o mouse ou clicar */
+    background-color: #fff; /* Cor de fundo ao passar o mouse ou clicar */
+    transition: 1s; /* Transição suave de 1 segundo */
 }
 
+/* Estilos para o ícone do navegador (posicionamento absoluto) */
 .navigator .navigator__icon {
-    position: absolute;
-    top: -20px;   
+    position: absolute; /* Posicionamento absoluto */
+    top: -20px; /* Ajuste de posição para cima */
 }

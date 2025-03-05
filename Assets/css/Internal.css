@@ -1,102 +1,116 @@
+/* Resetando estilos padrão do navegador */
 @import url('reset.css');
+
+/* Importando estilos globais */
 @import url('global.css');
+
+/* Importando estilos específicos para componentes */
 @import url('./components/_navigator.css');
 @import url('./components/_pills.css');
 @import url('/Assets/css/components/_link-button.css');
 @import url('components/_gallery.css');
+
+/* Estilos para o wrapper principal */
 .s-wrapper {
-    display: flex;
-    height: 100vh;
-    flex-flow: row nowrap;      
+    display: flex; /* Define o layout como flexível */
+    height: 100vh; /* Altura total da viewport */
+    flex-flow: row nowrap; /* Disposição em linha sem quebra */
 }
 
+/* Estilos para a coluna esquerda */
 .s-wrapper  .s-left-column {
-    width: 100px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    padding-right: 50px;
-    left: 0;
-    top: 0;
-    z-index: 1;
-
+    width: 100px; /* Largura fixa */
+    height: 100vh; /* Altura total da viewport */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: fixed; /* Posição fixa na tela */
+    padding-right: 50px; /* Espaçamento à direita */
+    left: 0; /* Alinhado à esquerda */
+    top: 0; /* Alinhado ao topo */
+    z-index: 1; /* Sobreposição acima de outros elementos */
 }
 
+/* Estilos para o conteúdo principal */
 .s-wrapper .s-main-content {
-    height: 100%;
-    width: 100%;
-    padding-left: 130px;
-    position: relative;
+    height: 100%; /* Altura total */
+    width: 100%; /* Largura total */
+    padding-left: 130px; /* Espaçamento à esquerda */
+    position: relative; /* Posição relativa */
 }
 
-
+/* Estilos para a parte superior do conteúdo principal */
 .s-wrapper .s-main-content__top {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    height: 80vh; /* 80% da altura da viewport */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Disposição em coluna */
+    justify-content: flex-start; /* Alinhamento no topo */
 }
+
+/* Estilos para a parte inferior do conteúdo principal */
 .s-wrapper .s-main-content__bottom{
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    height: 20vh; /* 20% da altura da viewport */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Disposição em coluna */
+    justify-content: flex-end; /* Alinhamento na base */
 }
 
+/* Estilos para o logo dentro do conteúdo principal */
 .s-wrapper .s-main-content .s-logo img {
-    margin-top: 50px;
-    margin-left: 0;
-    margin-bottom: 30px;
+    margin-top: 50px; /* Espaçamento superior */
+    margin-left: 0; /* Sem espaçamento à esquerda */
+    margin-bottom: 30px; /* Espaçamento inferior */
 }
 
-
+/* Estilos para a descrição dentro do conteúdo principal */
 .s-wrapper .s-main-content .s-description {
-    background-color: rgba(0, 0, 0, 0.7);
-    max-width: 50%;
-    padding: 20px;
-    border-radius: 10px;  
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto com 70% de opacidade */
+    max-width: 50%; /* Largura máxima de 50% */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
 }
 
+/* Estilos para o texto da descrição */
 .s-wrapper .s-main-content__top .s-description__text p {
-    color: white;
-    line-height: 170%;
+    color: white; /* Cor do texto */
+    line-height: 170%; /* Altura da linha */
 }
 
+/* Estilos para os "pills" dentro da descrição */
 .s-wrapper .s-main-content__top .s-description .s-pills {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espaçamento inferior */
 }
 
-
+/* Estilos para os links dentro do conteúdo principal */
 .s-wrapper .s-main-content .s-links {
-    padding: 20px;
-    padding-left: 0;
+    padding: 20px; /* Espaçamento interno */
+    padding-left: 0; /* Sem espaçamento à esquerda */
 }
 
+/* Estilos para a lista de links */
 .s-wrapper .s-main-content .s-links ul {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Layout flexível */
+    flex-direction: row; /* Disposição em linha */
 }
 
-
+/* Estilos para diferentes fundos de Spiderman */
 .s-spiderman-01-01 {
     background-image: url('/Assets/images/spiderman-tobey/movie-01/background.png');
-    background-position: cover;
+    background-position: cover; /* Cobre todo o fundo */
 }
 
 .s-spiderman-01-02 {
     background-image: url('/Assets/images/spiderman-tobey/movie-02/background.png');
-    background-position: cover;
+    background-position: cover; /* Cobre todo o fundo */
 }
 
 .s-spiderman-01-03 {
     background-image: url('/Assets/images/spiderman-tobey/movie-03/background.png');
-    background-position: cover;
+    background-position: cover; /* Cobre todo o fundo */
 }
 
+/* Estilos para o vídeo de fundo */
 .s-wrapper video {
-    position: fixed;
-    width: 100%;
-
+    position: fixed; /* Posição fixa na tela */
+    width: 100%; /* Largura total */
 }

@@ -1,24 +1,27 @@
+/* Estilos para a galeria */
 .gallery {
-    padding: 20px;
-    padding-left: 20px;
+    padding: 20px; /* Espaçamento interno de 20px em todos os lados */
+    padding-left: 0px; /* Espaçamento interno adicional à esquerda */
 }
 
+/* Estilos para a lista dentro da galeria */
 .gallery ul {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Define o layout como flexível */
+    flex-direction: row; /* Disposição dos itens em linha */
 }
 
+/* Estilos para os itens da lista dentro da galeria */
 .gallery ul li {
-    margin-left: 25px;
+    margin-left: 25px; /* Espaçamento à esquerda entre os itens */
 }
 
+/* Estilos específicos para o primeiro item da lista */
 .gallery ul li:first-child {
-    margin-left: 0;
-
+    margin-left: 0; /* Remove o espaçamento à esquerda do primeiro item */
 }
 
-
-.gallery ul li a img { 
-    border: solid 6px white;
-    border-radius: 15px;
+/* Estilos para as imagens dentro dos links da galeria */
+.gallery ul li a img {
+    border: solid 6px white; /* Borda sólida de 6px na cor branca */
+    border-radius: 15px; /* Bordas arredondadas com raio de 15px */
 }

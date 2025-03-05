@@ -1,17 +1,20 @@
+/* Estilos para a lista dentro do contêiner .pills */
 .pills ul {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Define o layout como flexível */
+    flex-direction: row; /* Disposição dos itens em linha */
 }
 
+/* Estilos para os itens da lista dentro do contêiner .pills */
 .pills ul li {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 5px 15px;
-    margin: 0 10px;
-    border-radius: 20px;
-    text-transform: uppercase;
+    background-color: var(--primary-color); /* Cor de fundo (usando uma variável CSS) */
+    color: white; /* Cor do texto */
+    padding: 5px 15px; /* Espaçamento interno (5px topo/baixo, 15px esquerda/direita) */
+    margin: 0 10px; /* Espaçamento externo (0 topo/baixo, 10px esquerda/direita) */
+    border-radius: 20px; /* Bordas arredondadas */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
 }
 
-.pills ul li:first-child{
+/* Remove o espaçamento à esquerda do primeiro item da lista */
+.pills ul li:first-child {
     margin-left: 0;
 }

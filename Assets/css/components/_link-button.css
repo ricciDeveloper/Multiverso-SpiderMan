@@ -1,34 +1,38 @@
-a.link-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-  
-  a.link-button .icon{
-    width: 32px;
-    height: 32px;
-    padding: 3px;
-    background-color: var(--primary-color);
-    border: solid 1px white;
-    background-clip: content-box;
-    border-radius: 50%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  a.link-button .icon .play-icon{
-    border:solid 7px white;
-    width:0;
-    height: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    margin-right: -7px;
-  }
-  
-  a.link-button .label{
-    margin-left: 10px;
-  }
+/* Estilos para o link com a classe .link-button */
+a.link-button {
+  display: flex; /* Define o layout como flexível */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  color: white; /* Cor do texto */
+}
+
+/* Estilos para o ícone dentro do link */
+a.link-button .icon {
+  width: 32px; /* Largura do ícone */
+  height: 32px; /* Altura do ícone */
+  padding: 3px; /* Espaçamento interno */
+  background-color: var(--primary-color); /* Cor de fundo (usando uma variável CSS) */
+  border: solid 1px white; /* Borda sólida branca */
+  background-clip: content-box; /* Define que a cor de fundo só aparece na área do conteúdo (excluindo o padding) */
+  border-radius: 50%; /* Transforma o ícone em um círculo */
+  position: relative; /* Posicionamento relativo (para ajustes internos) */
+  display: flex; /* Layout flexível para centralizar o conteúdo */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Estilos para o ícone de play dentro do ícone */
+a.link-button .icon .play-icon {
+  border: solid 7px white; /* Borda sólida branca */
+  width: 0; /* Largura zerada (o ícone é criado apenas com bordas) */
+  height: 0; /* Altura zerada (o ícone é criado apenas com bordas) */
+  border-top-color: transparent; /* Borda superior transparente */
+  border-right-color: transparent; /* Borda direita transparente */
+  border-bottom-color: transparent; /* Borda inferior transparente */
+  margin-right: -7px; /* Ajuste de posicionamento para alinhar o ícone */
+}
+
+/* Estilos para o rótulo (texto) ao lado do ícone */
+a.link-button .label {
+  margin-left: 10px; /* Espaçamento à esquerda entre o ícone e o rótulo */
+}
